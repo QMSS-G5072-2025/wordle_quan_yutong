@@ -4,6 +4,11 @@
 # list see the documentation:
 # https://www.sphinx-doc.org/en/master/usage/configuration.html
 
+# -- Path setup --------------------------------------------------------------
+import os
+import sys
+sys.path.insert(0, os.path.abspath('../src'))
+
 # -- Project information -----------------------------------------------------
 
 project = u"wordle_yq2397"
@@ -21,7 +26,15 @@ extensions = [
     "sphinx.ext.napoleon",
     "sphinx.ext.viewcode",
 ]
-autoapi_dirs = ["../src"]
+autoapi_dirs = ["../src/wordle_yq2397"]
+autoapi_type = 'python'
+autoapi_options = [
+    'members',
+    'undoc-members',
+    'show-inheritance',
+    'show-module-summary',
+    'imported-members',
+]
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
