@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "wordle_yq2397"
+version = "0.1.0"
+description = "A Wordle game package"
+authors = ["Yutong Quan"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.13"
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
